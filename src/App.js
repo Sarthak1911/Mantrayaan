@@ -1,53 +1,30 @@
-import "./App.css"
-import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-// import { useState } from "react";
+import React, {useState} from "react";
+import Process from "./components/Process";
+import Lists from "./components/Lists";
+import verse from "./verse.json"
 
-const App = () => {
-    
+const App = () => {    
 
-    const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'hi-IN' });
-    const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
-    // const [timeStamp, setTimeStamp] = useState(Date.now());
+    const [showProcess, setShowProcess] = useState(false);
+    const [selectedShloka, setSelectedShloka] = useState(null);
 
-    const textToSpeech = () =>{
-        const SpokenText = new SpeechSynthesisUtterance(transcript);
-        SpokenText.lang = 'hi-IN';
-        SpokenText.rate = 0.7;
-        window.speechSynthesis.speak(SpokenText);
-    }
-    if (!browserSupportsSpeechRecognition) {
-        return null;
-    }
+    const handleShlokaClick = (shloka) => {
+        setSelectedShloka(shloka);
+        setShowProcess(true);
+    };
 
-
-    function reset(elementId){
-        
-    } 
-        
-
+    const handleCloseProcess = () => {
+        setShowProcess(false);
+    };
 
     return (
         <>
-            <div className="container">
-                <h2>Mantrayaan</h2>
-                <br/>
-                <p>धृतराष्ट्र उवाच धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय</p>
+            <h2>Mantrayaan</h2>
+            {/* <Lists verse={verse}></Lists>
+            <Process></Process> */}
 
-                <div className="main-content" id = "clear" >
-                    {transcript}
-                </div>
-
-                <div className="btn-style">
-
-                    <button onClick={startListening}>Start</button>
-                    <button onClick={SpeechRecognition.stopListening}>Stop</button>
-                    <button onClick={textToSpeech}>Your Speech</button>
-                    <button onClick={reset('clear')}>Clear Text</button>
-
-                </div>
-
-            </div>
-
+            {!showProcess && <Lists verse={verse} onShlokaClick={handleShlokaClick} />}
+            {showProcess && <Process shloka={selectedShloka} onCloseProcess={handleCloseProcess} />}
         </>
     );
 };

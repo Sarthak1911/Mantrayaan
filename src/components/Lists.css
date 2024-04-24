@@ -1,0 +1,23 @@
+.lcontainer{
+    border-radius: 10px;
+    /* background: red; */
+    padding: 20px;
+    padding-bottom: 1px;
+    margin: 10px;
+}
+.bcontainer{
+    /* box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%); */
+    /* background-color: aliceblue; */
+    border-radius: 20px;
+}
+.body{
+    box-shadow: 0 12px 48px 0px rgba(68, 73, 88, 0.2);
+    padding: 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.sid{
+    margin-bottom: 10px
+}
