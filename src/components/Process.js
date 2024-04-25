@@ -4,7 +4,7 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 
 export default function Process({shloka, onCloseProcess}) {
 
-    const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'mr-IN' });
+    const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'hi-IN' });
     const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
 
     const textToSpeech = () =>{
@@ -13,6 +13,15 @@ export default function Process({shloka, onCloseProcess}) {
         SpokenText.rate = 0.7;
         window.speechSynthesis.speak(SpokenText);
     }
+
+    const tts2 = () =>{
+        const CorrectText = new SpeechSynthesisUtterance(shloka.text);
+        CorrectText.lang = 'hi-IN';
+        CorrectText.rate = 0.7;
+        window.speechSynthesis.speak(CorrectText);
+        
+    }
+
     if (!browserSupportsSpeechRecognition) {
         return null;
     }
@@ -35,6 +44,7 @@ export default function Process({shloka, onCloseProcess}) {
                     <button onClick={startListening}>Start</button>
                     <button onClick={SpeechRecognition.stopListening}>Stop</button>
                     <button onClick={textToSpeech}>Your Speech</button>
+                    <button onClick={tts2}>Correct Speech</button>
                     {/* <button onClick={reset('clear')}>Clear Text</button> */}
                     <button onClick={onCloseProcess}>Back</button>
 

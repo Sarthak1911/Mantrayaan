@@ -24,7 +24,7 @@ body {
 
 .container {
   /* padding: 10px; */
-  width: 800px;
+  width: 900px;
   margin-top: 10px;
 }
 
@@ -45,7 +45,7 @@ p {
 }
 
 .main-content {
-  max-width: 50rem;
+  max-width: 75rem;
   width: 100%;
   min-height: 400px;
   height: auto;
@@ -73,6 +73,7 @@ p,
 
 .btn-style{
   display: flex;
+  justify-content: space-evenly;
 
 }
 
