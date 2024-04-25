@@ -1,0 +1,20 @@
+.jcontainer{
+    padding: 20px;
+}
+.jcontainer .scontainer{
+    box-shadow: 0 12px 48px 0px rgba(68, 73, 88, 0.2);
+    height: 60px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+}
+.jncontainer{
+    display: flex;
+}
+
+.scontainer {
+    align-content: center;
+    cursor: pointer;
+}

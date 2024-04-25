@@ -1,0 +1,41 @@
+.content-first img{
+    width: 400px;
+}
+.mc{
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+.mc .content-first h1{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.mc .content-first p{
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+section{
+    padding: 20px;
+}
+
+.content-second img{
+    width: 400px;
+}
+
+.mc .content-second h1{
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+    text-align: right;
+}
+
+.mc .content-second p{
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: right;
+}
