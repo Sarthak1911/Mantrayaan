@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Process from "./components/Process";
 import Lists from "./components/Lists";
-// import verse from "./verse.json";
+import verse from "./verse.json";
 import sample from "./sample.json";
 import Header from "./components/Header";
 import Hero from "./components/Hero";

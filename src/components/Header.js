@@ -14,9 +14,9 @@ const Header = ({ onTryNowClick, onExitClick, showTryNowButton }) => {
                             <span></span>
                             <div className="navbar-item">
                                 {showTryNowButton ? (
-                                    <button className="button is-primary btn-lg" onClick={onTryNowClick}>Try Now</button>
+                                    <button className="button is-primary btn-lg rounded-pill bg-dark" onClick={onTryNowClick}>Try Now</button>
                                 ) : (
-                                    <button className="button is-primary btn-lg" onClick={onExitClick}>Exit</button>
+                                    <button className="button is-primary btn-lg rounded-pill bg-dark" onClick={onExitClick}>Exit</button>
                                 )}
                             </div>
                         </div>

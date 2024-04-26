@@ -41,12 +41,12 @@ export default function Process({shloka, onCloseProcess}) {
 
                 <div className="btn-style">
 
-                    <button onClick={startListening}>Start</button>
-                    <button onClick={SpeechRecognition.stopListening}>Stop</button>
-                    <button onClick={textToSpeech}>Your Speech</button>
-                    <button onClick={tts2}>Correct Speech</button>
+                    <button className="button is-primary btn-lg bg-dark" onClick={startListening}>Start</button>
+                    <button className="button is-primary btn-lg bg-dark" onClick={SpeechRecognition.stopListening}>Stop</button>
+                    <button className="button is-primary btn-lg bg-dark" onClick={textToSpeech}>Your Speech</button>
+                    <button className="button is-primary btn-lg bg-dark" onClick={tts2}>Correct Speech</button>
+                    <button className="button is-primary btn-lg bg-dark" onClick={onCloseProcess}>Back</button>
                     {/* <button onClick={reset('clear')}>Clear Text</button> */}
-                    <button onClick={onCloseProcess}>Back</button>
 
                 </div>
 
