@@ -6,11 +6,11 @@ const Header = ({ onTryNowClick, onExitClick, showTryNowButton }) => {
         <div>
             <header>
                 <nav className="navbar">
-                    <div className="container">
+                    <div className="hcontainer">
                         <div className="navbar-brand">
                             <h2 className="navbar-item">Mantrayaan</h2>
                         </div>
-                        <div className="container">
+                        <div className="hcontainer-btn">
                             <span></span>
                             <div className="navbar-item">
                                 {showTryNowButton ? (
