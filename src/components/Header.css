@@ -15,9 +15,18 @@
 
 .navbar .hcontainer-btn{
     /* width: 900px; */
+
     margin-top: 10px;
     margin-right: 30px;
     display: flex;
     justify-content: space-between;
 }
 
+.navbar-brand{
+    display: flex;
+    /* height: ; */
+}
+.navbar-brand img{
+    height: 60px;
+    padding-bottom: 10px;
+}
