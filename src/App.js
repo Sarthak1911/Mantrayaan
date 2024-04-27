@@ -29,6 +29,7 @@ const App = () => {
     const handleExitClick = () => {
         setShowHero(true);
         setShowTryNowButton(true);
+        setShowProcess(false);
     };
 
     return (
@@ -42,7 +43,7 @@ const App = () => {
                 onExitClick={handleExitClick} 
                 showTryNowButton={showTryNowButton} 
             />
-            {showHero && <Hero/>}
+            {showHero && <Hero/> }
             {!showProcess && !showHero && <Lists verse={sample} onShlokaClick={handleShlokaClick} />}
             {showProcess && <Process shloka={selectedShloka} onCloseProcess={handleCloseProcess} />}
         </>
