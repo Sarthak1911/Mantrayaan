@@ -1,3 +1,16 @@
+## Mantrayaan
+"Mantrayaan" is an innovative software project designed to bridge the ancient wisdom of Sanskrit mantras with cutting-edge technology. 
+This unique system empowers users to harness the power of mantras by providing accurate pronunciation feedback, enhancing their spiritual practice and understanding of this sacred language.
+"Mantrayaan" is a manifestation of tradition and technology, offering a unique and invaluable resource for individuals on their spiritual journeys and those eager to explore the beauty of the Sanskrit language.
+
+![HomePage](https://github.com/Sarthak1911/Mantrayaan/assets/126591195/8823e275-b104-480c-9226-19da3aa73cc5)
+
+![Lists](https://github.com/Sarthak1911/Mantrayaan/assets/126591195/1bd0cf8e-9d00-4399-8db8-eafa9b6fd8a3)
+
+![Process](https://github.com/Sarthak1911/Mantrayaan/assets/126591195/e9c6661f-c571-4ca2-8420-ef1ca180bf27)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
