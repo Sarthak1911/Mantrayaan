@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Header.css";
 import swastika from "../assets/swastika.gif";
+import Logo from "../assets/Logo.png";
 
 const Header = ({ onTryNowClick, onExitClick, showTryNowButton }) => {
     return (
@@ -10,7 +11,8 @@ const Header = ({ onTryNowClick, onExitClick, showTryNowButton }) => {
                     <div className="hcontainer">
                         <div className="navbar-brand">
                             <img src= {swastika} alt="logo" />
-                            <h2 className="navbar-item">Mantrayaan</h2>
+                            <img className='main-logo' src= {Logo} alt="mantrayaan" />
+                            {/* <h2 className="navbar-item">Mantrayaan</h2> */}
                         </div>
                         <div className="hcontainer-btn">
                             <span></span>
