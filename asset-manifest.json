@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Mantrayaan/static/css/main.85c96726.css",
+    "main.js": "/Mantrayaan/static/js/main.8ff492d2.js",
+    "static/js/453.f586f54e.chunk.js": "/Mantrayaan/static/js/453.f586f54e.chunk.js",
+    "static/media/swastika.gif": "/Mantrayaan/static/media/swastika.84fb0be20da8f71d4b35.gif",
+    "static/media/mantra_second.png": "/Mantrayaan/static/media/mantra_second.305daa24cc1c86540bfb.png",
+    "static/media/Mantra.png": "/Mantrayaan/static/media/Mantra.2fae08c7720b9f192886.png",
+    "static/media/Logo.png": "/Mantrayaan/static/media/Logo.65b317667f12f0b6b45b.png",
+    "index.html": "/Mantrayaan/index.html",
+    "main.85c96726.css.map": "/Mantrayaan/static/css/main.85c96726.css.map",
+    "main.8ff492d2.js.map": "/Mantrayaan/static/js/main.8ff492d2.js.map",
+    "453.f586f54e.chunk.js.map": "/Mantrayaan/static/js/453.f586f54e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85c96726.css",
+    "static/js/main.8ff492d2.js"
+  ]
+}
